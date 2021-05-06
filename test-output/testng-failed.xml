@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Wiki Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="remoteFirefox"/>
+  <test parallel="methods" name="Wiki Test(failed)">
+    <classes>
+      <class name="com.automation.training.tests.WikiTests">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="testCSharpSearch"/>
+          <include name="beforeSuite"/>
+          <include name="testWikiSearch"/>
+        </methods>
+      </class> <!-- com.automation.training.tests.WikiTests -->
+    </classes>
+  </test> <!-- Wiki Test(failed) -->
+</suite> <!-- Failed suite [Wiki Test Suite] -->

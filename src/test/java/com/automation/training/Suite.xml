@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name ="First Test Suite">
+<listeners>
+	<listener class-name="com.automation.training.MyCoolListener"></listener>
+</listeners>
+<parameter name="stringA" value="I love "></parameter>
+<parameter name="stringB" value="test automation"></parameter>
+<parameter name="browser" value="chrome"></parameter>
+
+	<test name="First Test">
+		<groups>
+			<run>
+				<include name="grupo1"/>				
+			</run>
+		</groups>
+		<classes>
+			<class name="com.automation.training.AutomationTests">
+			</class>
+		</classes>
+	</test>
+</suite>

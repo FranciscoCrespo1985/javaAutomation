@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [First Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="stringA" value="I love "/>
+  <parameter name="stringB" value="test automation"/>
+  <listeners>
+    <listener class-name="com.automation.training.MyCoolListener"/>
+  </listeners>
+  <test name="First Test(failed)">
+    <groups>
+      <run>
+        <include name="grupo1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.automation.training.AutomationTests">
+        <methods>
+          <include name="testConcat" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.automation.training.AutomationTests -->
+    </classes>
+  </test> <!-- First Test(failed) -->
+</suite> <!-- Failed suite [First Test Suite] -->

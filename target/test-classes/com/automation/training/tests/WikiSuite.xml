@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name ="Wiki Test Suite" verbose="1" thread-count="5" parallel="methods">
+	<parameter name="browser" value="remoteFirefox"/>
+	<test name="Wiki Test">		
+		<classes>
+			<class name="com.automation.training.tests.WikiTests"/>
+		</classes>
+	</test>
+</suite>
